@@ -1,6 +1,6 @@
 (function($) {
-  "use strict";
-//sticky navbar start
+//   "use strict";
+// //sticky navbar start
 var width = $(window).width();
 
   $(window).scroll(function(){
@@ -23,6 +23,7 @@ var width = $(window).width();
       // rangeArr = [],
       inputType =$("input[type=range]");
       owl.owlCarousel({
+      center: true,
       nav: true,
       loop: false,
       mouseDrag: true,
@@ -33,17 +34,7 @@ var width = $(window).width();
       center: false,
       animateIn: 'fadeIn',
       animateOut: 'fadeOut',
-      responsive: {
-        0: {
-          items: 1,
-        },
-        600: {
-          items: 1,
-        },
-        1280: {
-          items: 1,
-        }
-      }
+      items: 1,
     });
     //   function getIndex(event) {
       
@@ -100,9 +91,10 @@ var width = $(window).width();
       responsive:{
         0: {
           items: 1,
+          center: true,
         },
           600:{
-              items:1
+              items:2
           },
           1200:{
               items:4
@@ -118,9 +110,10 @@ var width = $(window).width();
       nav: true,
       videoWidth: true,
       responsive:{
-        0: {
-          items: 2,
-        },
+          0: {
+            items: 1,
+            center: true,
+          },
           600:{
               items:2
           },
