@@ -60,7 +60,7 @@
 
                 <!-- ***** Menu Start ***** -->
                 <ul class="header__bottom__nav" id="mobile__menu__nav">
-                    <li class="nav-item"><a href="#about__us" class="nav-link mobile__exit__icon"><i class="fas fa-times"></i></a></li>
+                    <li class="nav-item"><a href="#about__us" class="nav-link exit__icon mobile__exit__icon"><i class="fas fa-times"></i></a></li>
                     <li class="nav-item active"><a href="#about__us" class="nav-link">О нас</a></li>
                     <li class="nav-item"><a href="#advantages" class="nav-link">Расписание</a></li>
                     <li class="nav-item"><a href="#extra__services" class="nav-link">Программа</a></i></li>
@@ -94,17 +94,15 @@
 
         </div>
 
-        <div class="container-fluid">
-            <ul class="nav-menu" id="navbar">
-                <li class="nav-item active"><a href="#about__us" class="nav-link">О центре<i></i></a></li>
-                <li class="nav-item"><a href="#contacts" class="nav-link">Документы<i></i></a></li>
-                <li class="nav-item"><a href="#about__us" class="nav-link">Родителям</a><i></i></li>
-                <li class="nav-item"><a href="#catalog" class="nav-link">Питание</a></li>
-                <li class="nav-item"><a href="#catalog" class="nav-link">Новости</a></li>
-                <li class="nav-item"><a href="#catalog" class="nav-link">3D тур</a></li>
-                <li class="nav-item"><a href="#feedbacks" class="nav-link">Отзывы</a></li>
-            </ul>
-        </div>
+        <ul class="nav-menu"  id="navbar">
+            <li class="nav-item active"><a href="#about__us" class="nav-link">О центре<i></i></a></li>
+            <li class="nav-item"><a href="#contacts" class="nav-link">Документы<i></i></a></li>
+            <li class="nav-item"><a href="#about__us" class="nav-link">Родителям</a><i></i></li>
+            <li class="nav-item"><a href="#catalog" class="nav-link">Питание</a></li>
+            <li class="nav-item"><a href="#catalog" class="nav-link">Новости</a></li>
+            <li class="nav-item"><a href="#catalog" class="nav-link">3D тур</a></li>
+            <li class="nav-item"><a href="#feedbacks" class="nav-link">Отзывы</a></li>
+        </ul>
     </header>
     <!-- ***** Header Area End ***** -->
 
@@ -113,7 +111,7 @@
 <div class="welcome__banner__section section" id="banner select-program">
     <div class="welcome__banner">
         <div class="container">
-            <div class="welcome__banner__carousel owl-carousel">
+            <div class="welcome__banner__carousel owl-carousel owl-theme">
                 <div class="welcome__banner__carousel__item item">
                     <h1>Kidsstory</h1>
                     <p>Английский детский 
@@ -244,6 +242,9 @@
 <!-- ***** Contacts Banner Area End ***** -->
 
 
+
+
+
 <!-- ***** Extra Services Area Start ***** -->
 <div class="extra__services__section section" id="extra__services">
     <div class="container">
@@ -359,6 +360,9 @@
 <!-- ***** Extra Services Area End ***** -->
 
 
+
+
+
 <!-- ***** Video Gallery Area Start ***** -->
 <div class="video__gallery__section section" id="video__gallery">
     <div class="container">
@@ -369,7 +373,7 @@
             <p class="section__text">Вы можете ознакомиться как проходят наши будни</p>
         </div>
 
-        <div class="video__gallery__carousel owl-carousel">
+        <div class="video__gallery__carousel owl-carousel owl-theme">
             <div class="video__gallery__carousel__item item">
                 <video controls poster="./src/images/1532352878 1.png">
                     <source src="./src/video/Lionel Messi vs Physics.mp4">
@@ -383,12 +387,6 @@
                 </video>
             </div>
             <div class="video__gallery__carousel__item item">
-                <video controls poster="./src/images/8162774360354054_4c1e 1.png">
-                    <source src="./src/video/Lionel Messi vs Physics.mp4">
-                Your browser does not support the video tag.
-                </video>
-            </div>
-            <div class="video__gallery__carousel__item item">
                 <video controls poster="./src/images/1532352878 1.png">
                     <source src="./src/video/Lionel Messi vs Physics.mp4">
                 Your browser does not support the video tag.
@@ -401,7 +399,13 @@
                 </video>
             </div>
             <div class="video__gallery__carousel__item item">
-                <video controls poster="./src/images/8162774360354054_4c1e 1.png">
+                <video controls poster="./src/images/1532352878 1.png">
+                    <source src="./src/video/Lionel Messi vs Physics.mp4">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video__gallery__carousel__item item">
+                <video controls poster="./src/images/vospitatel_dolzhen 1.png">
                     <source src="./src/video/Lionel Messi vs Physics.mp4">
                 Your browser does not support the video tag.
                 </video>
@@ -411,6 +415,9 @@
     </div>
 </div>
 <!-- ***** Video Gallery Area End ***** -->
+
+
+
 
 
 <!-- ***** Advantages Area Start ***** -->
@@ -466,8 +473,51 @@
 <!-- ***** Advantages Area End ***** -->
 
 
+
+
+
+<!-- Modal HTML embedded directly into document -->
+<div id="ex1" class="modal">
+    <div class="modal__header">
+        <h4 class="modal__label">Подробнее о педагоге</h4>
+        <a class="exit__icon modal__exit__icon" href="#" rel="modal:close"><i class="fas fa-times"></i></a>
+    </div>
+    <div class="modal__body">
+        <img class="card__avatar" src="./src/images/Mask group.png" alt="Avatar" style="width:100%">
+        <div class="card__text">
+            <h4 class="card__avatar__position">Руководитель
+                kids story</h4>
+            <h6 class="card__avatar__name"><strong>Журавлев</strong><br>Дмитрий Анатольевич</h6>
+            <p class="card__avatar__text">Педагог - психолог</p>
+            <p class="card__avatar__worked__years">Стаж 11 лет</p>
+
+            <div class="card__avatar__nav__social nav__social">
+                <a href="vk.me/agvento" target="_blank"><i class="fab fa-vk"></i></a>
+                <a href="https://t.me/channelname" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+                <a href="https://t.me/channelname" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+            </div>
+        </div>
+        <div class="about">
+            <p class="section__text">Мы создали пространство, в котором каждый ребёнок проявляет и раскрывает себя, развивает индивидуальные особенности и таланты.</p>
+            <p class="about__text section__text">Наша задача — сделать так, чтобы каждый день в Kids story был счастливым.</p>
+            
+            <ul class="about__section__list">
+                <li class="about__section__list__item">Английский детский клуб. Для детей с 2 до 7 лет. Погружение в языковую среду, собственная кухня, охраняемая огороженная территория, медицинский кабинет, соляная пещера.</li>
+                <li class="about__section__list__item">Дополнительные услуги. Для детей с 2 до 18 лет. Развивающие студии, творческие мастерские, спортивные секции.</li>
+                <li class="about__section__list__item">Kids story - «ежедневное развитие детей на 360 градусов».</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
 <!-- ***** Command Gallery Area Start ***** -->
 <div class="command__gallery__section section" id="command">
+    
     <div class="container">
         <div class="section__header">
             <h2 class="section__label">
@@ -475,63 +525,86 @@
             </h2>
         </div>
 
-        <div class="modal">
-            <div class="modal__header">
-                <h4></h4>
-                <img src="" alt="">
-            </div>
-            <div class="modal__body">
-                <img class="card__avatar" src="./src/images/Mask group.png" alt="Avatar" style="width:100%">
-                <div class="card__text">
-                    <h4>state</h4>
-                    <h6 class="card__avatar__name"><strong>Журавлев</strong><br>Дмитрий Анатольевич</h6>
-                    <p class="card__avatar__text">Педагог - психолог</p>
-                    <p class="card__avatar__text">Стаж 11 лет</p>
-                </div>
-                <div class="about">
-                    <p class="section__text">Мы создали пространство, в котором каждый ребёнок проявляет и раскрывает себя, развивает индивидуальные особенности и таланты.</p>
-                    <p class="about__text section__text">Наша задача — сделать так, чтобы каждый день в Kids story был счастливым.</p>
-                    
-                    <ul class="about__section__list">
-                        <li class="about__section__list__item section__text">Английский детский клуб. Для детей с 2 до 7 лет. Погружение в языковую среду, собственная кухня, охраняемая огороженная территория, медицинский кабинет, соляная пещера.</li>
-                        <li class="about__section__list__item section__text">Дополнительные услуги. Для детей с 2 до 18 лет. Развивающие студии, творческие мастерские, спортивные секции.</li>
-                        <li class="about__section__list__item section__text">Kids story - «ежедневное развитие детей на 360 градусов».</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="command__gallery__carousel owl-carousel">
+        <div class="command__gallery__carousel owl-carousel owl-theme">
             <div class="command__gallery__carousel__item item">
-                <img class="card__avatar" src="./src/images/Mask group.png" alt="Avatar" style="width:100%">
-                <div class="card__text">
-                    <h5 class="card__avatar__name"><strong>Журавлев</strong><br>Дмитрий Анатольевич</h5>
-                    <p class="card__avatar__text">Педагог - психолог</p>
-                    <p class="card__avatar__text">Стаж 11 лет</p>
-                </div>
+                <a href="#ex1" rel="modal:open">
+                    <img class="card__avatar" src="./src/images/Mask group.png" alt="Avatar" style="width:100%">
+                    <div class="card__text">
+                        <h5 class="card__avatar__name"><strong>Журавлев</strong><br>Дмитрий Анатольевич</h5>
+                        <p class="card__avatar__text">Педагог - психолог</p>
+                        <p class="card__avatar__text">Стаж 11 лет</p>
+                    </div>
+                </a>
             </div>
             <div class="command__gallery__carousel__item item">
-                <img class="card__avatar" src="./src/images/Mask groupp.png" alt="Avatar" style="width:100%">
-                <div class="card__text">
-                    <h5 class="card__avatar__name"><strong>Журавлев</strong><br>Дмитрий Анатольевич</h5>
-                    <p class="card__avatar__text">Педагог - психолог</p>
-                    <p class="card__avatar__text">Стаж 11 лет</p>
-                </div>
+                <a href="#ex1" rel="modal:open">
+                    <img class="card__avatar" src="./src/images/Mask groupp.png" alt="Avatar" style="width:100%">
+                    <div class="card__text">
+                        <h5 class="card__avatar__name"><strong>Журавлев</strong><br>Дмитрий Анатольевич</h5>
+                        <p class="card__avatar__text">Педагог - психолог</p>
+                        <p class="card__avatar__text">Стаж 11 лет</p>
+                    </div>
+                </a>
             </div>
             <div class="command__gallery__carousel__item item">
-                <img class="card__avatar" src="./src/images/Mask group.png" alt="Avatar" style="width:100%">
-                <div class="card__text">
-                    <h5 class="card__avatar__name"><strong>Журавлев</strong><br>Дмитрий Анатольевич</h5>
-                    <p class="card__avatar__text">Педагог - психолог</p>
-                    <p class="card__avatar__text">Стаж 11 лет</p>
-                </div>
+                <a href="#ex1" rel="modal:open">
+                    <img class="card__avatar" src="./src/images/Mask group.png" alt="Avatar" style="width:100%">
+                    <div class="card__text">
+                        <h5 class="card__avatar__name"><strong>Журавлев</strong><br>Дмитрий Анатольевич</h5>
+                        <p class="card__avatar__text">Педагог - психолог</p>
+                        <p class="card__avatar__text">Стаж 11 лет</p>
+                    </div>
+                </a>
             </div>
             <div class="command__gallery__carousel__item item">
-                <img class="card__avatar" src="./src/images/Mask groupp.png" alt="Avatar" style="width:100%">
-                <div class="card__text">
-                    <h5 class="card__avatar__name"><strong>Журавлев</strong><br>Дмитрий Анатольевич</h5>
-                    <p class="card__avatar__text">Педагог - психолог</p>
-                    <p class="card__avatar__text">Стаж 11 лет</p>
-                </div>
+                <a href="#ex1" rel="modal:open">
+                    <img class="card__avatar" src="./src/images/Mask groupp.png" alt="Avatar" style="width:100%">
+                    <div class="card__text">
+                        <h5 class="card__avatar__name"><strong>Журавлев</strong><br>Дмитрий Анатольевич</h5>
+                        <p class="card__avatar__text">Педагог - психолог</p>
+                        <p class="card__avatar__text">Стаж 11 лет</p>
+                    </div>
+                </a>
+            </div>
+            <div class="command__gallery__carousel__item item">
+                <a href="#ex1" rel="modal:open">
+                    <img class="card__avatar" src="./src/images/Mask group.png" alt="Avatar" style="width:100%">
+                    <div class="card__text">
+                        <h5 class="card__avatar__name"><strong>Журавлев</strong><br>Дмитрий Анатольевич</h5>
+                        <p class="card__avatar__text">Педагог - психолог</p>
+                        <p class="card__avatar__text">Стаж 11 лет</p>
+                    </div>
+                </a>
+            </div>
+            <div class="command__gallery__carousel__item item">
+                <a href="#ex1" rel="modal:open">
+                    <img class="card__avatar" src="./src/images/Mask groupp.png" alt="Avatar" style="width:100%">
+                    <div class="card__text">
+                        <h5 class="card__avatar__name"><strong>Журавлев</strong><br>Дмитрий Анатольевич</h5>
+                        <p class="card__avatar__text">Педагог - психолог</p>
+                        <p class="card__avatar__text">Стаж 11 лет</p>
+                    </div>
+                </a>
+            </div>
+            <div class="command__gallery__carousel__item item">
+                <a href="#ex1" rel="modal:open">
+                    <img class="card__avatar" src="./src/images/Mask group.png" alt="Avatar" style="width:100%">
+                    <div class="card__text">
+                        <h5 class="card__avatar__name"><strong>Журавлев</strong><br>Дмитрий Анатольевич</h5>
+                        <p class="card__avatar__text">Педагог - психолог</p>
+                        <p class="card__avatar__text">Стаж 11 лет</p>
+                    </div>
+                </a>
+            </div>
+            <div class="command__gallery__carousel__item item">
+                <a href="#ex1" rel="modal:open">
+                    <img class="card__avatar" src="./src/images/Mask groupp.png" alt="Avatar" style="width:100%">
+                    <div class="card__text">
+                        <h5 class="card__avatar__name"><strong>Журавлев</strong><br>Дмитрий Анатольевич</h5>
+                        <p class="card__avatar__text">Педагог - психолог</p>
+                        <p class="card__avatar__text">Стаж 11 лет</p>
+                    </div>
+                </a>
             </div>
         </div>       
     </div>
@@ -904,7 +977,13 @@
     <script src="src/js/owl-carousel.js"></script>
     <script src="carousel.js"></script>
     
+    <!-- Telegram -->
     <script id="journalist-broadcast-353945930" async defer src="https://journali.st/broadcasts/353945930-widget-10.js"></script>
+    
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
     <!-- Global Init -->
     <script src="src/js/main.js"></script>
 
