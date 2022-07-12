@@ -51,7 +51,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: #fff;
   font-size: 16px;
-
   background-image: url("../images/icons/Vectoraq.png"), url("../images/icons/Groupugr7.png"), url("../images/icons/Vectordsdsd.png");
   background-repeat: no-repeat;
   background-position: bottom right, 0 45%, 50% 45.5%;
@@ -61,6 +60,10 @@ body {
   width: 100%;
   margin: 3.75em auto;
   border-radius: 20px;
+  padding: 0;
+}
+.container{
+  max-width: 100%;
 }
 h1{
   font-size: 6rem;
@@ -109,6 +112,24 @@ p, .copyright {
 a {
   text-decoration: none;
 }
+.breadcrumb{
+  margin: 0!important;
+}
+.breadcrumb__list{
+  align-items: center!important;
+}
+.breadcrumb__list__item::before {
+  content: " "!important;
+}
+.breadcrumb__list__item__link{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--text_color)!important;
+}
+.breadcrumb__list__item.is-active .breadcrumb__list__item__link{
+  color: var(--basic_color)!important;
+}
 strong{
   font-weight: 700;
 }
@@ -143,6 +164,13 @@ strong{
   background: var(--basic_color);
   color: #fff;
 }
+label{
+  margin: 1.5em 0 1.1875em; 
+  color: #fff;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+}
 input{
   max-width: 308px;
   width: 100%;
@@ -163,13 +191,6 @@ input{
 }
 input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
-}
-label{
-  margin: 1.5em 0 1.1875em; 
-  color: #fff;
-  font-weight: 600;
-  font-size: 10px;
-  line-height: 12px;
 }
 .control {
   font-family: arial;
@@ -468,7 +489,7 @@ global styles
   line-height: 1.0625rem;
   color: var(--text_color);
 }
-.mega__menu .mega__menu__item:hover a{
+.mega__menu .mega__menu__item a:hover{
   color: var(--basic_color);
   transition-property: all;
   transition-timing-function: linear;
@@ -477,7 +498,7 @@ global styles
 .mega__menu .mega__menu__item .fa-angle-down{
   color: var(--text_color);
 }
-.mega__menu .mega__menu__item:hover .fa-angle-down, .mega__menu .mega__menu__item:focus .fa-angle-down{
+.mega__menu .mega__menu__item a:hover + .fa-angle-down, .mega__menu .mega__menu__item a:focus + .fa-angle-down{
   color: var(--basic_color);
   transition-property: all;
   transition-timing-function: linear;
@@ -799,19 +820,6 @@ global styles
 /*CONTACTS BANNER END*/
 
 
-.col{
-  color: red;
-}
-#breadcrumbs li { 
-  display: inline-block; 
-}
-#breadcrumbs li:not(:first-child) { 
-  margin-left: 0.4em; 
-}
-#breadcrumbs li:not(:first-child):before {
-  content: "/";
-  margin-right: 0.4em;
-}
 
 
 
@@ -926,6 +934,7 @@ global styles
 
 
 .blocker {
+  
   z-index: 10!important;
   background: linear-gradient(130.83deg, rgba(128, 129, 189, 0.8) 14.95%, rgba(128, 129, 189, 0.8) 80%);
 }
@@ -933,9 +942,13 @@ global styles
   max-width: 844px!important;
   min-width: 280px;
   padding: 0!important;
-  border-radius: 20px!important;
+  border-radius: 22px!important;
   box-shadow: unset!important;
   background: transparent!important;
+  -webkit-border-radius: 22px!important;
+  -moz-border-radius: 22px!important;
+  -ms-border-radius: 22px!important;
+  -o-border-radius: 22px!important;
 }
 .modal a.close-modal {
   display: none!important;
@@ -1298,6 +1311,9 @@ p, .copyright {
   font-size: 12px;
   line-height: 15px;
 }
+.breadcrumb{
+  display: none!important;
+}
 .submit__btn{
   padding: 10px;
 }
@@ -1340,7 +1356,7 @@ global styles
 
 /*HEADER START*/
 .header__area{
-  padding: 20px;
+  padding: 16px 20px;
 }
 .header__area__top{
   display: none;
@@ -1394,9 +1410,9 @@ global styles
   right: 0;
   z-index: 9999;
   background: linear-gradient(130.83deg, rgba(128, 129, 189, 0.8) 14.95%, rgba(128, 129, 189, 0.8) 80%);
-  transition-duration: 2s;
+  transition-duration: 0.2s;
   transition-property: all;
-  transition-delay: 2s;
+  transition-delay: 0.2s;
   transition-timing-function: linear;
 }
 .mega__menu .mega__menu__item{
@@ -1414,15 +1430,17 @@ global styles
 
 
 
-.mega__menu .mega__menu__item:hover a, .mega__menu .mega__menu__item:focus a{
+.mega__menu .mega__menu__item a:hover, .mega__menu .mega__menu__item a:focus{
   color: var(--basic_red);
+  transition-property: color;
+
 }
-.mega__menu .mega__menu__item .fa-angle-down{
-  font-size: 24px;
+.mega__menu .mega__menu__item a + .fa-angle-down{
+  font-size: 20px;
   margin-right: auto;
   color: #fff;
 }
-.mega__menu .mega__menu__item:hover .fa-angle-down, .mega__menu .mega__menu__item:focus .fa-angle-down{
+.mega__menu .mega__menu__item a:hover + .fa-angle-down, .mega__menu .mega__menu__item a:focus + .fa-angle-down{
   color: var(--basic_red);
   transition-duration: 0.1s;
 }
@@ -1430,15 +1448,11 @@ global styles
   position: relative;
 }
 .menu-dropdown-icon ul{
+  margin-top: 5px;
   min-width: 100%;
   padding: 16px 18px;
-  background: #ffffff85;
+  background: #ffffff;
   position: initial;
-  border-radius: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
 }
 .menu-dropdown-icon ul .mega__menu__item{
   justify-content: start;
@@ -1465,6 +1479,10 @@ global styles
 .mega__menu__item .nav__button{
   background: #FFF;
   color: var(--text_color);
+}
+.mega__menu__item:hover .nav__button{
+  background: var(--basic_red);
+  color: #fff;
 }
 .mega__menu__item .contact__number{
   font-weight: 400;

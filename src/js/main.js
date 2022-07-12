@@ -3,20 +3,6 @@
 (function($) {
   let width = $(window).width();
 
-
-
-  // $(".command__gallery__carousel__item").on('click', function(){
-  //   let avatarPosition = $(".card__avatar__position").value();
-  //   let avatarName = $(".card__avatar__name").value();
-  //   let avatarText = $(".card__avatar__text").value();
-  //   let avatarWorkedYears = $(".card__avatar__worked__years").value();
-
-  // console.log(avatarPosition)
-
-  // });
-
-
-
   // Page loading animation loader start
   $(window).on("load", function() {
     if ($(".cover").length) {
@@ -74,41 +60,9 @@
   
 
 
+
+
   $(document).ready(function() {
-    /*nav color start*/ 
-    //   $('.header__area__bottom__menu__item__link').on('click', function() {
-    //     var activeLink = $('.active');
-    //     activeLink.removeClass('active'); 
-    //     $(this).parent().addClass('active');
-    //   });
-
-    //   $('.nav__menu__item__link').on('click', function() {
-    //     var activeLink = $('.active');
-    //     activeLink.removeClass('active'); 
-    //     $(this).parent().addClass('active');
-    //   });
-     /*nav color end*/ 
-
-
-
-
-
-    
-$(function() {
-  $('#breadcrumbs').breadcrumbsGenerator();
-});
-
-
-
-
-
-
-
-    //Modal start
-    $(".modal").modal({
-      fadeDuration: 1200
-    });
-    //Modal end
 
     //welcome__banner__carousel start
     $('.welcome__banner__carousel').owlCarousel({
@@ -145,7 +99,6 @@ $(function() {
             }
         }
     });
-
 
     //command__gallery__carousel
     $('.command__gallery__carousel').owlCarousel({
@@ -188,22 +141,38 @@ $(function() {
             }
         }
     });
+
+
     });
   //owl carousel end
+
+
+
+      //Modal start
+      $(".modal").modal({
+        fadeDuration: 1200,
+        fadeDelay: 0.50,
+        show: "false"
+      });
+      //Modal end
+
 
   // Mobile menu dropdown start
   $(".hamburger__btn").on("click", function() {
     if (width < 580) {
-      $("#mobile__menu__nav").toggleClass("active");
+      $(".mega__menu").toggleClass("active");
     }
   });
-  $("#mobile__menu__nav .nav-item").on("click", function() {
+  $("#mobile__menu__nav .exit__icon").on("click", function() {
     if (width < 580) {
-      $("#mobile__menu__nav").removeClass("active");
+      $(".mega__menu").removeClass("active");
     }
   });
   // Mobile menu dropdown end
 
+
+
+  
   /*map start*/ 
   window.onload = function WindowLoad(event) {
     var myLatlng = new google.maps.LatLng(59.938635, 30.323118);//kordinata bu

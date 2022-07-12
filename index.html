@@ -11,6 +11,8 @@
 
     <title>Kids Story</title>
 
+    <!-- site icon -->
+    <link rel="shortcut icon" href="./src/images/logo.png"/>
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,19 +20,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href='./src/fonts/Gotham Pro (1)/gothampro_medium.ttf' rel='stylesheet' type='text/css'>
     
-    <!-- site icon -->
-    <link rel="shortcut icon" href="./src/images/logo.png"/>
-    
     <!--load all Font Awesome styles -->
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
 
-    <!--jQuery Breadcrumb plugin styles -->
-    <link rel="stylesheet" href="./src/css/breadcrumbs.css">
-    
-    <!-- Additional CSS Files -->
-    <!-- <link rel="stylesheet" type="text/css" href="src/css/bootstrap.min.css"> -->
+    <!-- Owl carousel -->
     <link rel="stylesheet" type="text/css" href="src/css/owl-carousel.css">
     <link rel="stylesheet" href="carousel.css" />
+
+    <!--jQuery Breadcrumb plugin styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+
+    <!--Modal styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+    <!-- Bootstrap -->
+    <!-- <link rel="stylesheet" type="text/css" href="src/css/bootstrap.min.css"> -->
+    
+    <!-- Main style -->
     <link rel="stylesheet" type="text/css" href="src/css/main.css">
 
     </head>
@@ -47,68 +53,91 @@
     </div>  
     <!-- ***** Preloader End ***** -->
     
-    <!-- ***** Header Area Start ***** -->
+   <!-- ***** Header Area Start ***** -->
     <header class="header__area" id="header">
-        <div class="container">
-            <div class="header__area__top">
-                <a class="address__link" href="#location">Москва, ул. Муравская д.38, к.1   ЖК Мир Митино  <span> М. Пятницкое шоссе</span></a>
+    <div class="container">
+        <div class="header__area__top">
+            <a class="address__link" href="#location">Москва, ул. Муравская д.38, к.1   ЖК Мир Митино  <span> М. Пятницкое шоссе</span></a>
+        </div>
+
+        <nav class="header__area__bottom menu">
+            <!-- ***** Logo Start ***** -->
+            <a class="nav__brand" href="./index.html">
+                <img loading="lazy" src="./src/images/logo.png" alt="logo">
+            </a>
+            <!-- ***** Logo End ***** -->
+
+            <!-- ***** Menu Start ***** -->
+            <ul class="mega__menu menu" id="mobile__menu__nav">
+                <li class="mega__menu__item exit__icon"><a href="#about__us" class="mega__menu__item__link mobile__exit__icon"><i class="fas fa-times"></i></a></li>
+                <li class="mega__menu__item"><a href="#about__us" class="mega__menu__item__link">О нас</a><i class="fa-solid fa-angle-down"></i>
+                    <ul>
+                        <li class="mega__menu__item"><a href="#video__gallery" class="mega__menu__item__link">О центре</a></li>
+                        <li class="mega__menu__item"><a href="#video__gallery" class="mega__menu__item__link">Отзывы</a></li>
+                        <li class="mega__menu__item"><a href="#video__gallery" class="mega__menu__item__link">Документы</a></li>
+                        <li class="mega__menu__item"><a href="#video__gallery" class="mega__menu__item__link">Родителям</a></li>
+                        <li class="mega__menu__item"><a href="#video__gallery" class="mega__menu__item__link">Питание</a></li>
+                        <li class="mega__menu__item"><a href="#video__gallery" class="mega__menu__item__link">Новости</a>
+                            <ul>
+                                <li class="mega__menu__item"><a href="#video__gallery" class="mega__menu__item__link">Заголовок новости</a></li>
+                            </ul>
+                        </li>
+                        <li class="mega__menu__item"><a href="#video__gallery" class="mega__menu__item__link">3D тур</a></li>
+                    </ul>
+                </li>
+                <li class="mega__menu__item"><a href="#advantages" class="mega__menu__item__link">Расписание</a><i class="fa-solid fa-angle-down"></i>
+                    <ul>
+                        <li class="mega__menu__item"><a href="#video__gallery" class="mega__menu__item__link">Расписание основное</a></li>
+                        <li class="mega__menu__item"><a href="#video__gallery" class="mega__menu__item__link">Режим дня</a></li>
+                        <li class="mega__menu__item"><a href="#video__gallery" class="mega__menu__item__link">Расписание дополнительных услуг</a></li>
+                    </ul>
+                </li>
+                <li class="mega__menu__item"><a href="#extra__services" class="mega__menu__item__link">Программа</a><i class="fa-solid fa-angle-down"></i>
+                    <ul>
+                        <li class="mega__menu__item"><a href="./extra-services.html" class="mega__menu__item__link">Программа</a></li>
+                        <li class="mega__menu__item"><a href="./extra-services.html" class="mega__menu__item__link">Дополнительные услуги</a></li>
+                    </ul>
+                </li>
+                <li class="mega__menu__item"><a href="#video__gallery" class="mega__menu__item__link">Фото и видео</a></li>
+                <li class="mega__menu__item"><a href="#command" class="mega__menu__item__link">Команда</a></li>
+                <li class="mega__menu__item"><a href="#contacts" class="mega__menu__item__link">Контакты</a></li>
+                <li class="mega__menu__item">
+                    <button type="button" class="nav__button btn">Записаться на экскурсию</button>
+                </li>
+                <li class="mega__menu__item">
+                    <a class="mega__menu__item__link contact__number" href="tel:+998755555555"><i class="fa-solid fa-circle-phone"> +7 495 123 34 25</i><span>Заказать обратный звонок</span></a>
+                </li>
+                <li class="mega__menu__item nav__social">
+                    <a class="mega__menu__item__link" href="vk.me/agvento" target="_blank"><i class="fab fa-vk"></i></a>
+                    <a class="mega__menu__item__link" href="https://t.me/channelname" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+                </li>
+            </ul>
+
+            <a class="contact__number" href="tel:+998755555555"><i class="fa-solid fa-circle-phone"> +7 495 123 34 25</i><span>Заказать обратный звонок</span></a>
+            
+            <div class="nav__social">
+                <a href="vk.me/agvento" target="_blank"><i class="fab fa-vk"></i></a>
+                <a href="https://t.me/channelname" target="_blank"><i class="fab fa-telegram-plane"></i></a>
             </div>
 
-            <nav class="header__area__bottom">
-                <!-- ***** Logo Start ***** -->
-                <a class="nav__brand" href="./index.html">
-                    <img loading="lazy" src="./src/images/logo.png" alt="logo">
-                </a>
-                <!-- ***** Logo End ***** -->
-
-                <!-- ***** Menu Start ***** -->
-                <ul class="header__area__bottom__menu" id="mobile__menu__nav">
-                    <li class="header__area__bottom__menu__item"><a href="#about__us" class="header__area__bottom__menu__item__link exit__icon mobile__exit__icon"><i class="fas fa-times"></i></a></li>
-                    <li class="header__area__bottom__menu__item active"><a href="#about__us" class="header__area__bottom__menu__item__link">О нас</a></li>
-                    <li class="header__area__bottom__menu__item"><a href="#advantages" class="header__area__bottom__menu__item__link">Расписание</a></li>
-                    <li class="header__area__bottom__menu__item"><a href="#extra__services" class="header__area__bottom__menu__item__link">Программа</a></i></li>
-                    <li class="header__area__bottom__menu__item"><a href="#video__gallery" class="header__area__bottom__menu__item__link">Фото и видео</a></li>
-                    <li class="header__area__bottom__menu__item"><a href="#command" class="header__area__bottom__menu__item__link">Команда</a></li>
-                    <li class="header__area__bottom__menu__item"><a href="#contacts" class="header__area__bottom__menu__item__link">Контакты</a></li>
-
-                    <li class="header__area__bottom__menu__item">
-                        <button type="button" class="nav__button btn">Записаться на экскурсию</button>
-                    </li>
-                    <li class="header__area__bottom__menu__item">
-                        <a class="header__area__bottom__menu__item__link contact__number" href="tel:+998755555555"><i class="fa-solid fa-circle-phone"> +7 495 123 34 25</i><span>Заказать обратный звонок</span></a>
-                    </li>
-                    <li class="header__area__bottom__menu__item nav__social">
-                        <a class="header__area__bottom__menu__item__link" href="vk.me/agvento" target="_blank"><i class="fab fa-vk"></i></a>
-                        <a class="header__area__bottom__menu__item__link" href="https://t.me/channelname" target="_blank"><i class="fab fa-telegram-plane"></i></a>
-                    </li>
-                </ul>
-
-                <a class="contact__number" href="tel:+998755555555"><i class="fa-solid fa-circle-phone"> +7 495 123 34 25</i><span>Заказать обратный звонок</span></a>
-                
-                <div class="nav__social">
-                    <a href="vk.me/agvento" target="_blank"><i class="fab fa-vk"></i></a>
-                    <a href="https://t.me/channelname" target="_blank"><i class="fab fa-telegram-plane"></i></a>
-                </div>
-
-                <button type="button" class="hamburger__btn"><i class="fas fa-bars"></i></button>
-                <button type="button" class="nav__button btn">Записаться на экскурсию</button>
-                <!-- ***** Menu End ***** -->
-            </nav>   
-        </div>
-        <div class="container__fluid">
-            <ul class="nav__menu"  id="navbar">
-                <li class="nav__menu__item active"><a href="#about__us" class="nav__menu__item__link">О центре<i></i></a></li>
-                <li class="nav__menu__item"><a href="#contacts" class="nav__menu__item__link">Документы<i></i></a></li>
-                <li class="nav__menu__item"><a href="#about__us" class="nav__menu__item__link">Родителям</a><i></i></li>
-                <li class="nav__menu__item"><a href="#catalog" class="nav__menu__item__link">Питание</a></li>
-                <li class="nav__menu__item"><a href="#catalog" class="nav__menu__item__link">Новости</a></li>
-                <li class="nav__menu__item"><a href="#catalog" class="nav__menu__item__link">3D тур</a></li>
-                <li class="nav__menu__item"><a href="#feedbacks" class="nav__menu__item__link">Отзывы</a></li>
-            </ul>
-        </div>
-
-    </header>
-    <!-- ***** Header Area End ***** -->
+            <button type="button" class="hamburger__btn"><i class="fas fa-bars"></i></button>
+            <button type="button" class="nav__button btn">Записаться на экскурсию</button>
+            <!-- ***** Menu End ***** -->
+        </nav>   
+    </div>
+    <div class="container__fluid">
+        <ul class="nav__menu"  id="navbar">
+            <li class="nav__menu__item active"><a href="#about__us" class="nav__menu__item__link">О центре<i></i></a></li>
+            <li class="nav__menu__item"><a href="#contacts" class="nav__menu__item__link">Документы<i></i></a></li>
+            <li class="nav__menu__item"><a href="#about__us" class="nav__menu__item__link">Родителям</a><i></i></li>
+            <li class="nav__menu__item"><a href="#catalog" class="nav__menu__item__link">Питание</a></li>
+            <li class="nav__menu__item"><a href="#catalog" class="nav__menu__item__link">Новости</a></li>
+            <li class="nav__menu__item"><a href="#catalog" class="nav__menu__item__link">3D тур</a></li>
+            <li class="nav__menu__item"><a href="#feedbacks" class="nav__menu__item__link">Отзывы</a></li>
+        </ul>
+    </div>
+</header>
+<!-- ***** Header Area End ***** -->
     
     
     <!-- ***** Main Content Area Start ***** -->
@@ -503,45 +532,47 @@
 
 
 
-    <!-- Modal HTML embedded directly into document -->
-    <div id="ex1" class="modal">
-        <div class="modal__header">
-            <h4 class="modal__label">Подробнее о педагоге</h4>
-            <a class="exit__icon modal__exit__icon" href="#" rel="modal:close"><i class="fas fa-times"></i></a>
-        </div>
-        <div class="modal__body">
-            <img class="card__avatar" src="./src/images/Mask group.png" alt="Avatar" style="width:100%">
-            <div class="card__text">
-                <h4 class="card__avatar__position">Руководитель
-                    kids story</h4>
-                <h6 class="card__avatar__name"><strong>Журавлев</strong><br>Дмитрий Анатольевич</h6>
-                <p class="card__avatar__text">Педагог - психолог</p>
-                <p class="card__avatar__worked__years">Стаж 11 лет</p>
 
-                <div class="card__avatar__nav__social nav__social">
-                    <a href="vk.me/agvento" target="_blank"><i class="fab fa-vk"></i></a>
-                    <a href="https://t.me/channelname" target="_blank"><i class="fab fa-telegram-plane"></i></a>
-                    <a href="https://t.me/channelname" target="_blank"><i class="fa-brands fa-instagram-square"></i></i></a>
-                </div>
-            </div>
-            <div class="about">
-                <p class="section__text">Мы создали пространство, в котором каждый ребёнок проявляет и раскрывает себя, развивает индивидуальные особенности и таланты.</p>
-                <p class="about__text section__text">Наша задача — сделать так, чтобы каждый день в Kids story был счастливым.</p>
-                
-                <ul class="about__section__list">
-                    <li class="about__section__list__item">Английский детский клуб. Для детей с 2 до 7 лет. Погружение в языковую среду, собственная кухня, охраняемая огороженная территория, медицинский кабинет, соляная пещера.</li>
-                    <li class="about__section__list__item">Дополнительные услуги. Для детей с 2 до 18 лет. Развивающие студии, творческие мастерские, спортивные секции.</li>
-                    <li class="about__section__list__item">Kids story - «ежедневное развитие детей на 360 градусов».</li>
-                </ul>
-            </div>
-        </div>
-    </div>
 
 
 
     <!-- ***** Command Gallery Area Start ***** -->
     <div class="command__gallery__section section" id="command">
-        
+    <!-- Modal HTML embedded directly into document -->
+        <div id="ex1" class="modal">
+            <div class="modal__header">
+                <h4 class="modal__label">Подробнее о педагоге</h4>
+                <a class="exit__icon modal__exit__icon" href="#" rel="modal:close"><i class="fas fa-times"></i></a>
+            </div>
+            <div class="modal__body">
+                <img class="card__avatar" src="./src/images/Mask group.png" alt="Avatar" style="width:100%">
+                <div class="card__text">
+                    <h4 class="card__avatar__position">Руководитель
+                        kids story</h4>
+                    <h6 class="card__avatar__name"><strong>Журавлев</strong><br>Дмитрий Анатольевич</h6>
+                    <p class="card__avatar__text">Педагог - психолог</p>
+                    <p class="card__avatar__worked__years">Стаж 11 лет</p>
+
+                    <div class="card__avatar__nav__social nav__social">
+                        <a href="vk.me/agvento" target="_blank"><i class="fab fa-vk"></i></a>
+                        <a href="https://t.me/channelname" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+                        <a href="https://t.me/channelname" target="_blank"><i class="fa-brands fa-instagram-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="about">
+                    <p class="section__text">Мы создали пространство, в котором каждый ребёнок проявляет и раскрывает себя, развивает индивидуальные особенности и таланты.</p>
+                    <p class="about__text section__text">Наша задача — сделать так, чтобы каждый день в Kids story был счастливым.</p>
+                    
+                    <ul class="about__section__list">
+                        <li class="about__section__list__item">Английский детский клуб. Для детей с 2 до 7 лет. Погружение в языковую среду, собственная кухня, охраняемая огороженная территория, медицинский кабинет, соляная пещера.</li>
+                        <li class="about__section__list__item">Дополнительные услуги. Для детей с 2 до 18 лет. Развивающие студии, творческие мастерские, спортивные секции.</li>
+                        <li class="about__section__list__item">Kids story - «ежедневное развитие детей на 360 градусов».</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
         <div class="container">
             <div class="section__header">
                 <h2 class="section__label">
@@ -993,12 +1024,10 @@
         <!-- jQuery -->
         <script src="src/js/jquery-2.1.0.min.js"></script>
 
-        <!-- Bootstrap
-        <script src="src/js/popper.js"></script>
-        <script src="src/js/bootstrap.min.js"></script> -->
-
-        <!-- Plugins -->
-        <script type="text/javascript"src="http://maps.google.com/maps/api/js?sensor=true"></script>
+        <!-- Megamenu -->
+        <script src="./src/js/megamenu.js.js"></script>
+        
+        <!-- Owl carousel -->
         <script src="src/js/owl-carousel.js"></script>
         <script src="carousel.js"></script>
         
@@ -1007,10 +1036,13 @@
         
         <!-- jQuery Modal -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 
-        <!-- <script src="./src/jQuery-Plugin-To-Generate-Breadcrumbs-From-A-Sitemap/jQuery-Plugin-To-Generate-Breadcrumbs-From-A-Sitemap/dist/jquery.breadcrumbs-generator.js"></script> -->
-        <script src="./src/js/jquery.breadcrumbs-generator.js"></script>
+        <!-- Map -->
+        <script type="text/javascript"src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    
+        <!-- Bootstrap
+        <script src="src/js/popper.js"></script>
+        <script src="src/js/bootstrap.min.js"></script> -->
 
         <!-- Global Init -->
         <script src="src/js/main.js"></script>
