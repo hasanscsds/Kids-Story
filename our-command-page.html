@@ -11,7 +11,6 @@
 
     <title>Kids Story</title>
 
-
     <!-- site icon -->
     <link rel="shortcut icon" href="./src/images/logo.png"/>
 
@@ -55,252 +54,233 @@
     <!-- ***** Preloader End ***** -->
     
    <!-- ***** Header Area Start ***** -->
-    <header class="header__area" id="header">
-        <div class="container">
-            <div class="header__area__top">
-                <a class="address__link" href="#location">Москва, ул. Муравская д.38, к.1   ЖК Мир Митино  <span> М. Пятницкое шоссе</span></a>
+   <header class="header__area" id="header">
+    <div class="container">
+        <div class="header__area__top">
+            <a class="address__link" href="#location">Москва, ул. Муравская д.38, к.1   ЖК Мир Митино  <span> М. Пятницкое шоссе</span></a>
+        </div>
+
+        <nav class="header__area__bottom menu">
+            <!-- ***** Logo Start ***** -->
+            <a class="nav__brand" href="./index.html">
+                <img loading="lazy" src="./src/images/logo.png" alt="logo">
+            </a>
+            <!-- ***** Logo End ***** -->
+
+            <!-- ***** Menu Start ***** -->
+        <ul class="mega__menu menu" id="mobile__menu__nav">
+            <li class="mega__menu__item exit__icon"><a href="#about__us" class="mega__menu__item__link mobile__exit__icon"><i class="fas fa-times"></i></a></li>
+            <li class="mega__menu__item"><a href="#about__us" class="mega__menu__item__link">О нас</a><i class="fa-solid fa-angle-down"></i>
+                <ul>
+                    <li class="mega__menu__item"><a href="./about-center-page.html" class="mega__menu__item__link">О центре</a></li>
+                    <li class="mega__menu__item"><a href="#" class="mega__menu__item__link">Отзывы</a></li>
+                    <li class="mega__menu__item"><a href="#" class="mega__menu__item__link">Документы</a></li>
+                    <li class="mega__menu__item"><a href="#" class="mega__menu__item__link">Родителям</a></li>
+                    <li class="mega__menu__item"><a href="#" class="mega__menu__item__link">Питание</a></li>
+                    <li class="mega__menu__item"><a href="#" class="mega__menu__item__link">Новости</a></li>
+                    <li class="mega__menu__item"><a href="#" class="mega__menu__item__link">Заголовок новости</a></li>
+                    <li class="mega__menu__item"><a href="#" class="mega__menu__item__link">3D тур</a></li>
+                </ul>
+            </li>
+            <li class="mega__menu__item"><a href="#advantages" class="mega__menu__item__link">Расписание</a><i class="fa-solid fa-angle-down"></i>
+                <ul>
+                    <li class="mega__menu__item"><a href="#" class="mega__menu__item__link">Расписание основное</a></li>
+                    <li class="mega__menu__item"><a href="#" class="mega__menu__item__link">Режим дня</a></li>
+                    <li class="mega__menu__item"><a href="#" class="mega__menu__item__link">Расписание дополнительных услуг</a></li>
+                </ul>
+            </li>
+            <li class="mega__menu__item"><a href="#extra__services" class="mega__menu__item__link">Программа</a><i class="fa-solid fa-angle-down"></i>
+                <ul>
+                    <li class="mega__menu__item"><a href="#" class="mega__menu__item__link">Программа</a></li>
+                    <li class="mega__menu__item"><a href="./extra-services-page.html" class="mega__menu__item__link">Дополнительные услуги</a></li>
+                </ul>
+            </li>
+            <li class="mega__menu__item"><a href="#" class="mega__menu__item__link">Фото и видео</a></li>
+            <li class="mega__menu__item"><a href="#" class="mega__menu__item__link">Команда</a></li>
+            <li class="mega__menu__item"><a href="#" class="mega__menu__item__link">Контакты</a></li>
+            <li class="mega__menu__item">
+                <button type="button" class="nav__button btn">Записаться на экскурсию</button>
+            </li>
+            <li class="mega__menu__item">
+                <a class="mega__menu__item__link contact__number" href="tel:+998755555555"><i class="fa-solid fa-circle-phone"> +7 495 123 34 25</i><span>Заказать обратный звонок</span></a>
+            </li>
+            <li class="mega__menu__item nav__social">
+                <a class="mega__menu__item__link" href="vk.me/agvento" target="_blank"><i class="fab fa-vk"></i></a>
+                <a class="mega__menu__item__link" href="https://t.me/channelname" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+            </li>
+        </ul>
+
+            <a class="contact__number" href="tel:+998755555555"><i class="fa-solid fa-circle-phone"> +7 495 123 34 25</i><span>Заказать обратный звонок</span></a>
+            
+            <div class="nav__social">
+                <a href="vk.me/agvento" target="_blank"><i class="fab fa-vk"></i></a>
+                <a href="https://t.me/channelname" target="_blank"><i class="fab fa-telegram-plane"></i></a>
             </div>
 
-            <nav class="header__area__bottom menu">
-                <!-- ***** Logo Start ***** -->
-                <a class="nav__brand" href="./index.html">
-                    <img loading="lazy" src="./src/images/logo.png" alt="logo">
-                </a>
-                <!-- ***** Logo End ***** -->
-
-                <!-- ***** Menu Start ***** -->
-            <ul class="mega__menu menu" id="mobile__menu__nav">
-                <li class="mega__menu__item exit__icon"><a href="#about__us" class="mega__menu__item__link mobile__exit__icon"><i class="fas fa-times"></i></a></li>
-                <li class="mega__menu__item"><a href="#about__us" class="mega__menu__item__link">О нас</a><i class="fa-solid fa-angle-down"></i>
-                    <ul>
-                        <li class="mega__menu__item"><a href="#video__gallery" class="mega__menu__item__link">О центре</a></li>
-                        <li class="mega__menu__item"><a href="#video__gallery" class="mega__menu__item__link">Отзывы</a></li>
-                        <li class="mega__menu__item"><a href="#video__gallery" class="mega__menu__item__link">Документы</a></li>
-                        <li class="mega__menu__item"><a href="#video__gallery" class="mega__menu__item__link">Родителям</a></li>
-                        <li class="mega__menu__item"><a href="#video__gallery" class="mega__menu__item__link">Питание</a></li>
-                        <li class="mega__menu__item"><a href="#video__gallery" class="mega__menu__item__link">Новости</a><i class="fa-solid fa-angle-down"></i>
-                            <ul>
-                                <li class="mega__menu__item"><a href="#video__gallery" class="mega__menu__item__link">Заголовок новости</a></li>
-                            </ul>
-                        </li>
-                        <li class="mega__menu__item"><a href="#video__gallery" class="mega__menu__item__link">3D тур</a></li>
-                    </ul>
-                </li>
-                <li class="mega__menu__item"><a href="#advantages" class="mega__menu__item__link">Расписание</a><i class="fa-solid fa-angle-down"></i>
-                    <ul>
-                        <li class="mega__menu__item"><a href="#video__gallery" class="mega__menu__item__link">Расписание основное</a></li>
-                        <li class="mega__menu__item"><a href="#video__gallery" class="mega__menu__item__link">Режим дня</a></li>
-                        <li class="mega__menu__item"><a href="#video__gallery" class="mega__menu__item__link">Расписание дополнительных услуг</a></li>
-                    </ul>
-                </li>
-                <li class="mega__menu__item"><a href="#extra__services" class="mega__menu__item__link">Программа</a><i class="fa-solid fa-angle-down"></i>
-                    <ul>
-                        <li class="mega__menu__item"><a href="./extra-services.html" class="mega__menu__item__link">Программа</a></li>
-                        <li class="mega__menu__item"><a href="./extra-services.html" class="mega__menu__item__link">Дополнительные услуги</a></li>
-                    </ul>
-                </li>
-                <li class="mega__menu__item"><a href="#video__gallery" class="mega__menu__item__link">Фото и видео</a></li>
-                <li class="mega__menu__item"><a href="#command" class="mega__menu__item__link">Команда</a></li>
-                <li class="mega__menu__item"><a href="#contacts" class="mega__menu__item__link">Контакты</a></li>
-                <li class="mega__menu__item">
-                    <button type="button" class="nav__button btn">Записаться на экскурсию</button>
-                </li>
-                <li class="mega__menu__item">
-                    <a class="mega__menu__item__link contact__number" href="tel:+998755555555"><i class="fa-solid fa-circle-phone"> +7 495 123 34 25</i><span>Заказать обратный звонок</span></a>
-                </li>
-                <li class="mega__menu__item nav__social">
-                    <a class="mega__menu__item__link" href="vk.me/agvento" target="_blank"><i class="fab fa-vk"></i></a>
-                    <a class="mega__menu__item__link" href="https://t.me/channelname" target="_blank"><i class="fab fa-telegram-plane"></i></a>
-                </li>
-            </ul>
-
-                <a class="contact__number" href="tel:+998755555555"><i class="fa-solid fa-circle-phone"> +7 495 123 34 25</i><span>Заказать обратный звонок</span></a>
-                
-                <div class="nav__social">
-                    <a href="vk.me/agvento" target="_blank"><i class="fab fa-vk"></i></a>
-                    <a href="https://t.me/channelname" target="_blank"><i class="fab fa-telegram-plane"></i></a>
-                </div>
-
-                <button type="button" class="hamburger__btn"><i class="fas fa-bars"></i></button>
-                <button type="button" class="nav__button btn">Записаться на экскурсию</button>
-                <!-- ***** Menu End ***** -->
-            </nav>   
-        </div>
-        <div class="container__fluid">
-            <ul class="nav__menu"  id="navbar">
-                <li class="nav__menu__item active"><a href="#about__us" class="nav__menu__item__link">О центре<i></i></a></li>
-                <li class="nav__menu__item"><a href="#contacts" class="nav__menu__item__link">Документы<i></i></a></li>
-                <li class="nav__menu__item"><a href="#about__us" class="nav__menu__item__link">Родителям</a><i></i></li>
-                <li class="nav__menu__item"><a href="#catalog" class="nav__menu__item__link">Питание</a></li>
-                <li class="nav__menu__item"><a href="#catalog" class="nav__menu__item__link">Новости</a></li>
-                <li class="nav__menu__item"><a href="#catalog" class="nav__menu__item__link">3D тур</a></li>
-                <li class="nav__menu__item"><a href="#feedbacks" class="nav__menu__item__link">Отзывы</a></li>
-            </ul>
-        </div>
-    </header>
-    <!-- ***** Header Area End ***** -->
-
-
+            <button type="button" class="hamburger__btn"><i class="fas fa-bars"></i></button>
+            <button type="button" class="nav__button btn">Записаться на экскурсию</button>
+            <!-- ***** Menu End ***** -->
+        </nav>   
+    </div>
+    <div class="container__fluid">
+        <ul class="nav__menu"  id="navbar">
+            <li class="nav__menu__item active"><a href="#about__us" class="nav__menu__item__link">О центре<i></i></a></li>
+            <li class="nav__menu__item"><a href="#contacts" class="nav__menu__item__link">Документы<i></i></a></li>
+            <li class="nav__menu__item"><a href="#about__us" class="nav__menu__item__link">Родителям</a><i></i></li>
+            <li class="nav__menu__item"><a href="#catalog" class="nav__menu__item__link">Питание</a></li>
+            <li class="nav__menu__item"><a href="#catalog" class="nav__menu__item__link">Новости</a></li>
+            <li class="nav__menu__item"><a href="#catalog" class="nav__menu__item__link">3D тур</a></li>
+            <li class="nav__menu__item"><a href="#feedbacks" class="nav__menu__item__link">Отзывы</a></li>
+        </ul>
+    </div>
+</header>
+<!-- ***** Header Area End ***** -->
+    
+    
     <!-- ***** Main Content Area Start ***** -->
-    <main class="main__content__area" id="extra__services__page__content">
-
+    <main class="main__content__area">
+    
+        <!-- ***** Breadcrumb Start ***** -->
         <nav class="breadcrumb container" aria-label="breadcrumbs">
             <ul class="breadcrumb__list">
                 <li class="breadcrumb__list__item"><a class="breadcrumb__list__item__link" href="./index.html">Главная</a></li>
-                <li class="breadcrumb__list__item is-active"><a class="breadcrumb__list__item__link" href="./extra-services.html" aria-current="page">Дополнительные услуги</a></li>
+                <li class="breadcrumb__list__item"><a class="breadcrumb__list__item__link" href="#">О нас</a></li>
+                <li class="breadcrumb__list__item is-active"><a class="breadcrumb__list__item__link" href="./our-command-page.html" aria-current="page">Наша команда</a></li>
             </ul>
         </nav>
+        <!-- ***** Breadcrumb Start ***** -->
 
-
-        <!-- ***** Extra Services Area Start ***** -->
-        <section class="extra__services__section section" id="extra__services">
+        <!-- ***** Command Gallery Area Start ***** -->
+        <div class="command__gallery__section section" id="command">
             <div class="container">
-                <div class="extra__services__section__header section__header">
+                <div class="section__header">
                     <h2 class="section__label">
-                        Дополнительные услуги
+                        Наша команда
                     </h2>
                 </div>
 
-                <ul class="extra__services page">
-                    <li class="extra__services__item">
-                        <img src="./src/images/йога 1.png" alt="img">
-                        <a href="" class="extra__services__item__details">
-                            <span class="extra__services__item__details__img">
-                                <img src="./src/images/icons/extra-services-icons/Vector (1).png" alt="img">
-                            </span>
-                            <div class="extra__services__item__details__text">
-                                <p>Йога</p>
+                <div class="command__gallery page">
+                    <div class="command__gallery__item item">
+                        <a href="#ex1" rel="modal:open">
+                            <img class="avatar__img" src="./src/images/Mask group.png" alt="Avatar" style="width:100%">
+                            <div class="avatar__details">
+                                <h5 class="avatar__name"><strong>Журавлев</strong><br>Дмитрий Анатольевич</h5>
+                                <p class="avatar__text">Педагог - психолог</p>
+                                <p class="avatar__text">Стаж 11 лет</p>
                             </div>
                         </a>
-                    </li>
-
-                    <li class="extra__services__item">
-                        <img src="./src/images/монтессори 1.png" alt="img">
-                        <a href="" class="extra__services__item__details">
-                            <span class="extra__services__item__details__img">
-                                <img src="./src/images/icons/extra-services-icons/Vector (2).png" alt="img">
-                            </span>
-                            <div class="extra__services__item__details__text">
-                                <p>Монтессори</p>
+                    </div>
+                    <div class="command__gallery__item item">
+                        <a href="#ex1" rel="modal:open">
+                            <img class="avatar__img" src="./src/images/Mask groupp.png" alt="Avatar" style="width:100%">
+                            <div class="avatar__details">
+                                <h5 class="avatar__name"><strong>Журавлев</strong><br>Дмитрий Анатольевич</h5>
+                                <p class="avatar__text">Педагог - психолог</p>
+                                <p class="avatar__text">Стаж 11 лет</p>
                             </div>
                         </a>
-                    </li>
-
-                    <li class="extra__services__item">
-                        <img src="./src/images/teaching+golf+to+children 1.png" alt="img">
-                        <a href="" class="extra__services__item__details">
-                            <span class="extra__services__item__details__img">
-                                <img src="./src/images/icons/extra-services-icons/Vector (3).png" alt="img">
-                            </span>
-                            <div class="extra__services__item__details__text">
-                                <p>Гольф для 
-                                    малышей</p>
+                    </div>
+                    <div class="command__gallery__item item">
+                        <a href="#ex1" rel="modal:open">
+                            <img class="avatar__img" src="./src/images/Mask group.png" alt="Avatar" style="width:100%">
+                            <div class="avatar__details">
+                                <h5 class="avatar__name"><strong>Журавлев</strong><br>Дмитрий Анатольевич</h5>
+                                <p class="avatar__text">Педагог - психолог</p>
+                                <p class="avatar__text">Стаж 11 лет</p>
                             </div>
                         </a>
-                    </li>
-
-                    <li class="extra__services__item">
-                        <img src="./src/images/лего 1@2x.png" alt="img">
-                        <a href="" class="extra__services__item__details">
-                            <span class="extra__services__item__details__img">
-                                <img src="./src/images/icons/extra-services-icons/Vector (4).png" alt="img">
-                            </span>
-                            <div class="extra__services__item__details__text">
-                                <p>Занятия с беговелами</p>
+                    </div>
+                    <div class="command__gallery__item item">
+                        <a href="#ex1" rel="modal:open">
+                            <img class="avatar__img" src="./src/images/Mask groupp.png" alt="Avatar" style="width:100%">
+                            <div class="avatar__details">
+                                <h5 class="avatar__name"><strong>Журавлев</strong><br>Дмитрий Анатольевич</h5>
+                                <p class="avatar__text">Педагог - психолог</p>
+                                <p class="avatar__text">Стаж 11 лет</p>
                             </div>
                         </a>
-                    </li>
-
-                    <li class="extra__services__item">
-                        <img src="./src/images/UylvXOx9iqM 1.png" alt="img">
-                        <a href="" class="extra__services__item__details">
-                            <span class="extra__services__item__details__img">
-                                <img src="./src/images/icons/extra-services-icons/Vector (5).png" alt="img">
-                            </span>
-                            <div class="extra__services__item__details__text">
-                                <p>Легостроение и конструирование</p>
+                    </div>
+                    <div class="command__gallery__item item">
+                        <a href="#ex1" rel="modal:open">
+                            <img class="avatar__img" src="./src/images/Mask group.png" alt="Avatar" style="width:100%">
+                            <div class="avatar__details">
+                                <h5 class="avatar__name"><strong>Журавлев</strong><br>Дмитрий Анатольевич</h5>
+                                <p class="avatar__text">Педагог - психолог</p>
+                                <p class="avatar__text">Стаж 11 лет</p>
                             </div>
                         </a>
-                    </li>
-
-                    <li class="extra__services__item">
-                        <img src="./src/images/zanyatiya-po-vokalu 1.png" alt="img">
-                        <a href="" class="extra__services__item__details">
-                            <span class="extra__services__item__details__img">
-                                <img src="./src/images/icons/extra-services-icons/Vector (6).png" alt="img">
-                            </span>
-                            <div class="extra__services__item__details__text">
-                                <p>Тестопластика и глинопластика</p>
+                    </div>
+                    <div class="command__gallery__item item">
+                        <a href="#ex1" rel="modal:open">
+                            <img class="avatar__img" src="./src/images/Mask groupp.png" alt="Avatar" style="width:100%">
+                            <div class="avatar__details">
+                                <h5 class="avatar__name"><strong>Журавлев</strong><br>Дмитрий Анатольевич</h5>
+                                <p class="avatar__text">Педагог - психолог</p>
+                                <p class="avatar__text">Стаж 11 лет</p>
                             </div>
                         </a>
-                    </li>
-
-                    <li class="extra__services__item">
-                        <img src="./src/images/182e3f122eae409e4bd3b1d00313d702 1.png" alt="img">
-                        <a href="" class="extra__services__item__details">
-                            <span class="extra__services__item__details__img">
-                                <img src="./src/images/icons/extra-services-icons/Group 23.png" alt="img">
-                            </span>
-                            <div class="extra__services__item__details__text">
-                                <p>Риторика и ораторское мастерство</p>
+                    </div>
+                    <div class="command__gallery__item item">
+                        <a href="#ex1" rel="modal:open">
+                            <img class="avatar__img" src="./src/images/Mask group.png" alt="Avatar" style="width:100%">
+                            <div class="avatar__details">
+                                <h5 class="avatar__name"><strong>Журавлев</strong><br>Дмитрий Анатольевич</h5>
+                                <p class="avatar__text">Педагог - психолог</p>
+                                <p class="avatar__text">Стаж 11 лет</p>
                             </div>
                         </a>
-                    </li>
-
-                    <li class="extra__services__item">
-                        <img src="./src/images/978d55a25661c80564a9acbef8caf2a2 1.png" alt="img">
-                        <a href="" class="extra__services__item__details">
-                            <span class="extra__services__item__details__img">
-                                <img src="./src/images/icons/extra-services-icons/Vector (7).png" alt="img">
-                            </span>
-                            <div class="extra__services__item__details__text">
-                                <p>Занятия по скалолазанию</p>
+                    </div>
+                    <div class="command__gallery__item item">
+                        <a href="#ex1" rel="modal:open">
+                            <img class="avatar__img" src="./src/images/Mask groupp.png" alt="Avatar" style="width:100%">
+                            <div class="avatar__details">
+                                <h5 class="avatar__name"><strong>Журавлев</strong><br>Дмитрий Анатольевич</h5>
+                                <p class="avatar__text">Педагог - психолог</p>
+                                <p class="avatar__text">Стаж 11 лет</p>
                             </div>
                         </a>
-                    </li>
-
-                    <li class="extra__services__item">
-                        <img src="./src/images/4918 1.png" alt="img">
-                        <a href="" class="extra__services__item__details">
-                            <span class="extra__services__item__details__img">
-                                <img src="./src/images/icons/extra-services-icons/Vector (8).png" alt="img">
-                            </span>
-                            <div class="extra__services__item__details__text">
-                                <p>Театрализация на английском языке</p>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="extra__services__item">
-                        <img src="./src/images/f06593775fca9f4417f3501119f7f6a3 1.png" alt="img">
-                        <a href="" class="extra__services__item__details">
-                            <span class="extra__services__item__details__img">
-                                <img src="./src/images/icons/extra-services-icons/Vector (9).png" alt="img">
-                            </span>
-                            <div class="extra__services__item__details__text">
-                                <p>Кулинария и этикет сервисного стола</p>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="extra__services__item">
-                        <img src="./src/images/hello_html_m3166ba9d 1.png" alt="img">
-                        <a href="" class="extra__services__item__details">
-                            <span class="extra__services__item__details__img">
-                                <img src="./src/images/icons/extra-services-icons/Vector (10).png" alt="img">
-                            </span>
-                            <div class="extra__services__item__details__text">
-                                <p>Песочная терапия.</p>
-                            </div>
-                        </a>
-                    </li>
-
-                </ul>
+                    </div>
+                </div>       
             </div>
-        </section>
-        <!-- ***** Extra Services Area End ***** -->
+        </div>
+        <!-- ***** Command Gallery Area End ***** -->
 
 
+        <!-- Modal HTML embedded directly into document -->
+        <div id="ex1" class="modal">
+            <div class="modal__header">
+                <h4 class="modal__label">Подробнее о педагоге</h4>
+                <a class="exit__icon modal__exit__icon" href="#" rel="modal:close"><i class="fas fa-times"></i></a>
+            </div>
+
+            <div class="modal__body about__center">
+                <img class="avatar__img" src="./src/images/Mask group.png" alt="Avatar" style="width:100%">
+                
+                <div class="avatar__details">
+                    <h4 class="avatar__position">Руководитель
+                        kids story</h4>
+                    <h6 class="avatar__name"><strong>Журавлев</strong><br>Дмитрий Анатольевич</h6>
+                    <p class="avatar__text">Педагог - психолог</p>
+                    <p class="avatar__worked__years">Стаж 11 лет</p>
+                    <div class="avatar__nav__social nav__social">
+                        <a href="vk.me/agvento" target="_blank"><i class="fab fa-vk"></i></a>
+                        <a href="https://t.me/channelname" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+                        <a href="https://t.me/channelname" target="_blank"><i class="fa-brands fa-instagram-square"></i></i></a>
+                    </div>
+                </div>
+
+                <div class="about__details">
+                    <p class="section__text">Мы создали пространство, в котором каждый ребёнок проявляет и раскрывает себя, развивает индивидуальные особенности и таланты.</p>
+                    <p class="about__text section__text">Наша задача — сделать так, чтобы каждый день в Kids story был счастливым.</p>
+                    
+                    <ul class="about__list">
+                        <li class="about__list__item">Английский детский клуб. Для детей с 2 до 7 лет. Погружение в языковую среду, собственная кухня, охраняемая огороженная территория, медицинский кабинет, соляная пещера.</li>
+                        <li class="about__list__item">Дополнительные услуги. Для детей с 2 до 18 лет. Развивающие студии, творческие мастерские, спортивные секции.</li>
+                        <li class="about__list__item">Kids story - «ежедневное развитие детей на 360 градусов».</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
         <!-- ***** Features Area Start ***** -->
         <div class="features__section section">
@@ -390,7 +370,7 @@
         <!-- ***** Contacts Banner Area End ***** -->
 
 
-        <!-- ***** Location Start ***** -->
+            <!-- ***** Location Start ***** -->
         <section class="map__section section" id="location">     
             <div class="map" id="map">
                 <!-- ***** Section Title Start ***** -->
