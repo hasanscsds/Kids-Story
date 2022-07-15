@@ -144,6 +144,26 @@
             }
         }
     });
+    $('.our__sertifications__section .container .owl-carousel').owlCarousel({
+        items: 4,
+        margin: 12,
+        loop:true,
+        nav: true,
+        dots: true,
+        videoWidth: true,
+        responsive:{
+          0: {
+            items: 1,
+            center: true,
+          },
+            600:{
+                items:2
+            },
+            1200:{
+                items:4
+            }
+        }
+    });
 
     //feedbacks__carousel
     $('.feedbacks__section .container .owl-carousel').owlCarousel({
@@ -171,55 +191,57 @@
 
 
 
-      //Modal start
-      $(".modal").modal({
-        fadeDuration: 1200,
-        fadeDelay: 0.50,
-        show: "false"
+      // //Modal start
+      // $(".modal").modal({
+      //   fadeDuration: 1200,
+      //   fadeDelay: 0.50,
+      //   show: "false"
+      // });
+      // //Modal end
+
+
+      // Mobile menu dropdown start
+      $(".hamburger__btn").on("click", function() {
+        if (width < 580) {
+          $(".mega__menu").toggleClass("active");
+        }
       });
-      //Modal end
+      $("#mobile__menu__nav .exit__icon").on("click", function() {
+        if (width < 580) {
+          $(".mega__menu").removeClass("active");
+        }
+      });
+      // Mobile menu dropdown end
+
+ 
+        /*map start*/ 
+        window.onload = function WindowLoad(event) {
+          var myLatlng = new google.maps.LatLng(59.938635, 30.323118);//kordinata bu
+          var myOptions = {
+              zoom: 17, //karta yaqinligi
+              center: myLatlng,
+              mapTypeId: google.maps.MapTypeId.ROADMAP
+          }
+          var map = new google.maps.Map(document.getElementById("map"), myOptions);
+
+          addMarker(map, googleLatLng, "technotip.com")
+        }
+
+        function addMarker (map, googleLatLng, title){
+          var markerOpen={
+            position: googleLatLng,
+            map: map,
+            title: title,
+            animation: google.maps.Animation.DROP //yoki BOUNCE  bu animatsya turi
+          }
+          var marker = new google.maps.Marker(markerOpen)
+        }
+        /*map end*/ 
 
 
-  // Mobile menu dropdown start
-  $(".hamburger__btn").on("click", function() {
-    if (width < 580) {
-      $(".mega__menu").toggleClass("active");
-    }
-  });
-  $("#mobile__menu__nav .exit__icon").on("click", function() {
-    if (width < 580) {
-      $(".mega__menu").removeClass("active");
-    }
-  });
-  // Mobile menu dropdown end
-
-
-
-  
-  /*map start*/ 
-  window.onload = function WindowLoad(event) {
-    var myLatlng = new google.maps.LatLng(59.938635, 30.323118);//kordinata bu
-    var myOptions = {
-        zoom: 17, //karta yaqinligi
-        center: myLatlng,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-    }
-    var map = new google.maps.Map(document.getElementById("map"), myOptions);
-
-    addMarker(map, googleLatLng, "technotip.com")
-  }
-
-  function addMarker (map, googleLatLng, title){
-    var markerOpen={
-      position: googleLatLng,
-      map: map,
-      title: title,
-      animation: google.maps.Animation.DROP //yoki BOUNCE  bu animatsya turi
-    }
-    var marker = new google.maps.Marker(markerOpen)
-  }
-  /*map end*/ 
-
-
+        //details open attr toggle
+        $('details').click(function() {
+          $('details').removeAttr('open');
+        });
 
 })(window.jQuery);
